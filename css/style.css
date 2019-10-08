@@ -1,0 +1,133 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*think about how to use inherit and define some stuff for body and p and h1*/
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20pt;
+  padding: 0;
+  margin: 0 30px;
+}
+
+h1{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+footer{
+  background-color: #070032;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 30px;
+  right: 30px;
+}
+
+/**:focus{
+  border: 2px solid black;
+}*/
+
+.navi{
+  display: -webkit-box;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+header{
+  background-color: #070032;
+  padding: 30px 0;
+  display: -webkit-box;
+  display:flex;
+  -webkit-box-pack: justify;
+    justify-content: space-between;
+  -webkit-box-align: baseline;
+    align-items: baseline;
+}
+
+header nav ul{
+  display: -webkit-box;
+  display: flex;
+  list-style-type: none;
+}
+
+header nav li{
+  padding-right: 30px;
+}
+
+/*header nav li:second-child{
+  margin-left: auto;
+}*/
+
+header nav a{
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover, a:focus {
+  color: #FCCD04;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+}
+
+header p a{
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding-left: 30px;
+}
+
+header p a:hover, a:focus{
+  color: #FCCD04;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+}
+
+.skipcont a{
+  background-color: white;
+  color: #FCCD04;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skipcont a:focus{
+  top: 0;
+}
+
+.about {
+  padding: 20vw 0;
+  /*??*/
+}
+.about p{
+  padding: 30px 30px 0 30px;
+  color: #0C0032;
+  font-weight: bold;
+  font-size: 1.2em;
+  /*need to be much bolder*/
+}
+
+.projects{
+  background-color: #e8eaf4;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-item{
+}
