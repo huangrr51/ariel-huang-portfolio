@@ -271,7 +271,7 @@ img#more{
     text-decoration-style: dotted;
 }
 
-/*.gallery{
+.gallery{
   display: -webkit-box;
     display: flex;
   flex-wrap: wrap;
@@ -284,7 +284,7 @@ img#more{
   margin: 15px;
   max-width: 25vw;
   height: auto;
-}*/
+} /*to be updated*/
 
 
 .contact{
