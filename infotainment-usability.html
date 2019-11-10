@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151977473-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151977473-1');
+  </script>
+
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,25 +21,26 @@
   <body>
     <div class="skipcont"><a href="#skip">Skip to Main Content</a></div>
     <div class="navi">
-      <header>
-        <p><a href="index.html">ARIEL HUANG</a></p>
         <nav>
           <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Ariel Huang</a></li>
             <li class="nav-item"><a href="index.html#about">About</a></li>
-            <li class="nav-item"><a href="index.html#projects">Projects</a></li>
-              <!--<li class="nav-item"><a href="#gallery">Gallery</a></li>-->
+            <li class="nav-item" id="active"><a href="index.html#projects">Projects</a></li>
+            <li class="nav-item"><a href="index.html#gallery">Gallery</a></li>
             <li class="nav-item"><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
-      </header>
     </div>
 
+  <main>
     <div class="overview">
       <h1>New Generation Car Infotainment System Usability Testing</h1>
       <p>One of my projects as an automotive market research intern at Ipsos</p>
       <img id="ipsos" src="images/ipsos.jpg" alt="decoration" />
     </div>
 
+    
+    <a class="anchor" id="skip"></a>
     <div class="proj_info">
       <div class="proj_info_item" id="project_type">
         <h2>Project Type</h2>
@@ -59,7 +70,7 @@
       <h2>Planning</h2>
       <h3>Coordinating with all stakeholders involved</h3>
       <p>Within the team, we completed the study objectives and design. With the client, we revised their usability testing protocol with specificity to this study. With the operations team, we discussed the logistics of user recruitment, as well as the inclusion of a third-party user coordinator and interview transcriber. </p>
-      <img id="ipsos-study-design" src="images/ipsos-study-design.jpg" alt="decoration" />
+      <img id="ipsos-study-design" src="images/ipsos-study-design.jpg" alt="ipsos-study-design" />
     </div>
 
     <div class="proj-detail" id="execution">
@@ -72,27 +83,27 @@
       <h2>Analysis</h2>
       <h3>Gathering context and data as researchers</h3>
       <p>We used simple descriptive statistics on the quantitative rating data and accompanied them with pain points and user verbatim from the qualitative data.</p>
-      <img id="ipsos-summary" src="images/ipsos-summary.jpg" alt="decoration" />
+      <img id="ipsos-summary" src="images/ipsos-summary.jpg" alt="ipsos-summary" />
     </div>
 
     <div class="proj-detail" id="delivery">
       <h2>Delivery</h2>
       <h3>Compling a report</h3>
       <p>We documented the study process and presented our findings in executive summaries and data visualizations, complying with client company style guide.</p>
-      <img id="ipsos-data-vis" src="images/ipsos-data-vis.jpg" alt="decoration" />
+      <img id="ipsos-data-vis" src="images/ipsos-data-vis.jpg" alt="ipsos-data-vis" />
     </div>
 
     <figure class="back">
-      <img id="back" src="images/back.jpg" alt="decoration" />
+      <img id="back" src="images/back.jpg" alt="back"/>
       <figcaption><a href="index.html#projects">Back to project list</a></figcaption>
     </figure>
 
+</main>
     <footer>
-      <p>Designed and Developed by Ariel Huang &copy; 2019</p></br>
-      <p id="note">This website is still in development. Please check back often for new updates!</p>
-      <a href="https://www.linkedin.com/in/ariel-r-huang/"><img id="footer-img" src="images/linkedin-footer.jpg" alt="decoration" /></a>
+      <p>Designed and Developed by Ariel Huang &copy; 2019</p>
+      <a href="https://www.linkedin.com/in/ariel-r-huang/"><img id="footer-img1" src="images/linkedin-footer.jpg" alt="linkedin-footer" /></a>
       <!--<img id="footer-overlay" src="images/linkedin.jpg" alt="decoration" />-->
-      <a href="mailto:huangrr@umich.edu"><img id="footer-img" src="images/email-footer.jpg" alt="decoration" /></a>
+      <a href="mailto:huangrr@umich.edu"><img id="footer-img2" src="images/email-footer.jpg" alt="email-footer" /></a>
       <!--<img id="footer-overlay" src="images/email.jpg" alt="decoration" />-->
     </footer>
   </body>

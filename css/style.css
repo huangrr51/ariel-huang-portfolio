@@ -31,7 +31,7 @@ h2{
   text-align: center;
   font-size: 1em;
   font-weight: bolder;
-  padding: 1em 0; /*need to stay consistent with unit??*/
+  padding: 1em 0;
 }
 
 h3{
@@ -104,70 +104,72 @@ footer #note{
   border: 2px solid black;
 }*/
 
+#active{
+  border: 2px dotted #F79E02;
+
+  }
+
 .navi{
   display: -webkit-box;
   display:flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
     flex-direction: column;
+  -webkit-box-pack: justify;
+    justify-content: space-between;
   position: fixed;
   top: 0;
   left: 8vw;
   right: 8vw;
+  background-color: #ffffff;
+  border: 1px dotted #F79E02;
 }
 
-header{
-  background-color: #fff;
-  padding: 30px 0;
+nav ul{
   display: -webkit-box;
-  display:flex;
+    display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+    flex-direction: column;
   -webkit-box-pack: justify;
     justify-content: space-between;
-  -webkit-box-align: baseline;
-    align-items: baseline;
-}
-
-header nav ul{
-  display: -webkit-box;
-  display: flex;
   list-style-type: none;
+ 
 }
 
-header nav li{
-  padding-right: 30px;
+nav li{
+  text-align: center;
+  padding: 5px;
 }
 
-/*header nav li:second-child{
-  margin-left: auto;
-}*/
-
-header nav a{
-  text-decoration: none;
+nav li:first-child{
   color: #265077;
-}
-
-header nav a:hover, a:focus {
-  color: #F79E02; /*??issue when focus*/
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-    text-decoration-style: dotted;
-}
-
-header p a{
-  color: inherit;
   font-weight: bolder;
   letter-spacing: 0.1em;
   font-size: 1.5em;
-  text-decoration: none;
-
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-shadow: 
+       4px 4px 0px #d5d5d5;
 }
 
-header p a:hover, a:focus{
-  color: #F79E02;
+nav li:last-child{
+  padding-bottom: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #265077;
+  
+}
+
+nav a:hover, a:focus {
+  color: #F79E02; 
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
     text-decoration-style: dotted;
 }
+
 
 .skipcont a{
   background-color: #022140;
@@ -186,8 +188,7 @@ header p a:hover, a:focus{
 }
 
 .about {
-  margin: 50vw 0 5vw 0;
-
+  margin: 50vh 0 5vh 0;
 }
 
 
@@ -207,7 +208,7 @@ header p a:hover, a:focus{
   }
 }
 
-p#more{
+/*p#more{
   display: inline-block;
 }
 
@@ -231,7 +232,7 @@ img#more{
   display: inline-block;
   vertical-align: middle;
   padding: 20px;
-}
+}*/
 
 
 .projects{
@@ -240,12 +241,12 @@ img#more{
   flex-wrap: wrap;
   -webkit-box-pack: center;
     justify-content: space-evenly;
-  margin: 15px 0 5vw 0;
+  margin: 3vh 0 5vh 0;
 }
 
 .project-item{
   width: 85vw;
-  height: 15vw;
+  height: 15vh;
   border-radius: 10px;
   margin: 15px 0;
   background: #EFF5F9;
@@ -277,22 +278,25 @@ img#more{
   flex-wrap: wrap;
   -webkit-box-pack: center;
     justify-content: center;
-  margin: 15px 0 5vw 0;
+  margin: 3vh 0 5vh 0;
 }
 
 .gallery img{
   margin: 15px;
-  max-width: 25vw;
+  width:auto;
+  max-width: 80vw;
   height: auto;
-} /*to be updated*/
-
+  max-height: 50vh; 
+  -webkit-filter: drop-shadow(8px 8px 2px #d5d5d5);
+  filter: drop-shadow(8px 8px 2px #d5d5d5);
+} 
 
 .contact{
   display: -webkit-box;
     display: flex;
   -webkit-box-pack: center;
     justify-content: space-evenly;
-  margin: 15px 0 5vw 0;
+  margin: 3vh 0 5vh 0;
 }
 
 
@@ -300,15 +304,56 @@ img#more{
   text-align: center;
 }
 
+.form{
+  display: block;
+  text-align: center;
+}
+
+
+legend{
+  text-align: center;
+  padding: 1em 0;
+}
+
+label{
+  diplay: inline-block;
+  font-size: 0.8em;
+}
+
+input[type=text], textarea {
+  width: 40%;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button{
+  background-color: #022140;
+  color: white;
+  padding: 1em;
+  margin: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover, button:focus{
+  color: #F79E02; 
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+}
 
 .overview{
   background-color: #EFF5F9;
-  margin-top: 8vw;
+  margin-top: 30vh;
 }
 
 .overview p{
   text-align: center;
-  margin: 30px 20vw;
+  margin: 30px 10vw;
   animation: slide-in-two 2s ease-out;
 }
 
@@ -327,6 +372,7 @@ img#more{
   width: auto;
   margin: 0 auto;
   padding: 5% 0;
+
 }
 
 .proj_info {
@@ -335,13 +381,12 @@ img#more{
   flex-wrap: wrap;
   -webkit-box-pack: justify;
     justify-content: space-between;
-  margin: 3vw 0 5vw 0;
 }
 
 .proj_info_item{
   width: 80vw;
-  height: 20vw;
-  margin: 5vw 0;
+  height: 10vh;
+  margin: 5vh 0;
 }
 
 .proj_info_item h2{
@@ -376,7 +421,7 @@ img#more{
 
 .proj-detail h2{
   text-align: left;
-  color: #F79E02;
+  color: #265077;
 }
 
 .proj-detail p{
@@ -400,7 +445,7 @@ img#more{
     text-decoration-style: dotted;
 }
 
-.more-about-ariel{
+/*.more-about-ariel{
   display: grid;
   grid-template-columns: 400px auto;
   grid-column-gap: 50px;
@@ -461,25 +506,80 @@ img#more{
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
     text-decoration-style: dotted;
+}*/
+
+/*tablet*/
+@media screen and (min-width: 851px){
+  
+.navi{
+  display: -webkit-box;
+    display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+    flex-direction: row;
+  -webkit-box-pack: justify;
+    justify-content: space-between;
+
+}
+
+nav ul{
+  display: -webkit-box;
+    display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+    flex-direction: row;
+  -webkit-box-align: baseline;
+    align-items: baseline;
+
+}
+
+nav li{
+  margin-right: 20px;
 }
 
 
-@media screen and (min-width: 850px){
-  .about {
-    margin: 20vw 0 15vw 0;
+.about {
+  margin-top: 20vw;
     /*??*/
   }
 
-  .project-item {
+.overview{
+  margin-top: 5vw;
+}
+
+.project-item {
     width: 40vw;
     height: 15vw;
   }
 
-  .proj_info_item {
+.proj_info_item {
     width: 40vw;
-    height: 10vw;
-    margin: 0;
+    height: 15vw;
   }
+}
+
+.gallery img{
+  width:auto;
+  max-width: 40vw;
+  height: auto;
+  max-height: 50vh; 
+  z-index: -1;
+} 
+
+/*desktop*/
+@media screen and (min-width: 1281px){
+  .gallery img{
+  width: auto;
+  max-width: 25vw;
+  height: auto;
+  max-height: 50vh; 
+  overflow: hidden;
+} 
+
+.proj_info_item {
+    height: 10vw;
+  }
+}
 }
 
 @media screen and (prefers-reduced-motion: reduce){
@@ -492,6 +592,7 @@ img#more{
       transition: all 0s ease 0s;
   }
 
-  .about p{
+  .about p, .overview p{
     animation: none 0s ease;
   }
+

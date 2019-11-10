@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151977473-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151977473-1');
+</script>
+
+
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,25 +22,25 @@
   <body>
     <div class="skipcont"><a href="#skip">Skip to Main Content</a></div>
     <div class="navi">
-      <header>
-        <p><a href="index.html">ARIEL HUANG</a></p>
         <nav>
           <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Ariel Huang</a></li>
             <li class="nav-item"><a href="index.html#about">About</a></li>
-            <li class="nav-item"><a href="index.html#projects">Projects</a></li>
-              <!--<li class="nav-item"><a href="#gallery">Gallery</a></li>-->
+            <li class="nav-item" id="active"><a href="index.html#projects">Projects</a></li>
+            <li class="nav-item"><a href="index.html#gallery">Gallery</a></li>
             <li class="nav-item"><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
-      </header>
     </div>
 
+<main>
     <div class="overview">
       <h1>Lucid Software Design Jam: LucidChart Onboarding</h1>
       <p>Winning designs of onboarding features for LucidChart</p>
       <img id="lucid" src="images/lucid.jpg" alt="decoration" />
     </div>
 
+    <a class="anchor" id="skip"></a>
     <div class="proj_info">
       <div class="proj_info_item" id="project_type">
         <h2>Project Type</h2>
@@ -65,7 +76,7 @@
       <h2>Knowledge Synthesis</h2>
       <h3>What might be the best way to present our findings?</h3>
       <p>We decided to create a user journey map, summarizing two major problems--<strong>unclear personalization questions </strong> and <strong> difficulty navigating the document list </strong>. We also created a persona, identifying the strongest need--<strong>time efficiency</strong>. </p>
-      <img id="lucid-synthesis" src="images/lucid-synthesis.jpg" alt="decoration" />
+      <img id="lucid-synthesis" src="images/lucid-synthesis.jpg" alt="lucid-synthesis" />
     </div>
 
     <div class="proj-detail" id="ideation">
@@ -79,8 +90,8 @@
       <h3>Fast, low-fidelity wireframes</h3>
       <p>The first design allows users to <strong>self-select</strong> their roles and chart types and/or to browse templates by category each time they land in the application. It works with the <strong>fluid</strong> roles and needs of industry professionals, and template recommendations can be built upon <strong>exisitng</strong> tags and machine learning algorithms. </p>
       <p>The second design utilizes a checklist and progress bar to <strong>psychologically motivate</strong> initial guided engagement with the editor. Features in each step are highlighted and further instructions are shown when hovered over.</p>
-      <img id="lucid-wireframe1" src="images/lucid-wireframe1.jpg" alt="decoration" />
-      <img id="lucid-wireframe2" src="images/lucid-wireframe2.jpg" alt="decoration" />
+      <img id="lucid-wireframe1" src="images/lucid-wireframe1.jpg" alt="lucid-wireframe1" />
+      <img id="lucid-wireframe2" src="images/lucid-wireframe2.jpg" alt="lucid-wireframe2" />
     </div>
 
     <div class="proj-detail" id="outcome">
@@ -90,16 +101,17 @@
     </div>
 
     <figure class="back">
-      <img id="back" src="images/back.jpg" alt="decoration" />
+      <img id="back" src="images/back.jpg" alt="back" />
       <figcaption><a href="index.html#projects">Back to project list</a></figcaption>
     </figure>
 
+</main>
+
     <footer>
-      <p>Designed and Developed by Ariel Huang &copy; 2019</p></br>
-      <p id="note">This website is still in development. Please check back often for new updates!</p>
-      <a href="https://www.linkedin.com/in/ariel-r-huang/"><img id="footer-img" src="images/linkedin-footer.jpg" alt="decoration" /></a>
+      <p>Designed and Developed by Ariel Huang &copy; 2019</p>
+      <a href="https://www.linkedin.com/in/ariel-r-huang/"><img id="footer-img1" src="images/linkedin-footer.jpg" alt="linkedin-footer" /></a>
       <!--<img id="footer-overlay" src="images/linkedin.jpg" alt="decoration" />-->
-      <a href="mailto:huangrr@umich.edu"><img id="footer-img" src="images/email-footer.jpg" alt="decoration" /></a>
+      <a href="mailto:huangrr@umich.edu"><img id="footer-img2" src="images/email-footer.jpg" alt="email-footer" /></a>
       <!--<img id="footer-overlay" src="images/email.jpg" alt="decoration" />-->
     </footer>
   </body>

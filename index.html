@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151977473-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151977473-1');
+  </script>
+    
     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Ariel Huang</title>
   </head>
   <body>
-    <a class="anchor" id="index"></a>
+    <a class="anchor" id="index-anchor"></a>
     <div class="skipcont"><a href="#skip">Skip to Main Content</a></div>
     <div class="navi">
-      <header>
-        <p><a href="#index">ARIEL HUANG</a></p>
         <nav>
           <ul class="nav-links">
+            <li class="nav-item"><a href="#index">Ariel Huang</a></li>
             <li class="nav-item"><a href="#about">About</a></li>
             <li class="nav-item"><a href="#projects">Projects</a></li>
-            <!--<li class="nav-item"><a href="#gallery">Gallery</a></li>-->
+            <li class="nav-item"><a href="#gallery">Gallery</a></li>
             <li class="nav-item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </header>
     </div>
 
-    <a class="anchor" id="skip"></a> <a class="anchor" id="about"></a>
+  <main>
+    <a class="anchor" id="skip"></a> <a class="anchor" id="about-anchor"></a>
     <div class="about">
       <p>Hello! I'm Ariel Huang,</p>
-      <p>an aspiring UX Designer/Researcher</p>
+      <p>an aspiring UX Designer</p>
       <p>passionate about improving wellbeing and facilitating social change</p>
-      <p id="more"><a href="more-about-ariel.html">Read more about me</a></p>
-      <img id="more" src="images/more.jpg" alt="decoration" />
-
+      <!--<p id="more"><a href="more-about-ariel.html">Read more about me</a></p>
+      <img id="more" src="images/more.jpg" alt="decoration" />-->
     </div>
 
 
     <h1>Projects</h1>
-    <a class="anchor" id="projects"></a>
+    <a class="anchor" id="projects-anchor"></a>
     <div class="projects">
       <div class="project-item" id="project1">
         <h2><a href="competencies-tool.html">Online Research Administration Competencies Reference Tool</a></h2>
@@ -53,53 +62,61 @@
     </div>
 
     <h1>Gallery</h1>
-    <a class="anchor" id="gallery"></a>
+    <a class="anchor" id="gallery-anchor"></a>
     <div class="gallery" id="gallery">
-      <img id="image1" src="images/muprc.jpg" alt="decoration" />
-      <img id="image2" src="images/ipsos-summary.jpg" alt="decoration" />
-      <img id="image3" src="images/ipsos-study-design.jpg" alt="decoration" />
-      <img id="image4" src="images/ipsos-data-vis.jpg" alt="decoration" />
-      <img id="image5" src="images/lucid-synthesis.jpg" alt="decoration" />
-      <img id="image6" src="images/lucid-wireframe1.jpg" alt="decoration" />
-      <img id="image7" src="images/lucid-wireframe2.jpg" alt="decoration" />
-      <img id="image8" src="images/headshot.jpg" alt="decoration" />
-      <img id="image9" src="images/mpa-poster.jpg" alt="decoration" />
+      <img id="image1" src="images/muprc.jpg" alt="muprc" />
+      <img id="image2" src="images/ipsos-summary.jpg" alt="ipsos-summary" />
+      <img id="image3" src="images/ipsos-study-design.jpg" alt="ipsos-study-design" />
+      <img id="image4" src="images/ipsos-data-vis.jpg" alt="ipsos-data-vis" />
+      <img id="image5" src="images/lucid-synthesis.jpg" alt="lucid-synthesis" />
+      <img id="image6" src="images/lucid-wireframe1.jpg" alt="lucid-wireframe1" />
+      <img id="image7" src="images/lucid-wireframe2.jpg" alt="lucid-wireframe2" />
+    <img id="image8" src="images/headshot.jpg" alt="headshot" />
+      <img id="image9" src="images/mpa-poster.jpg" alt="mpa-poster" />
     </div>
 
     <h1>Contact</h1>
-    <a class="anchor" id="contact"></a>
+    <a class="anchor" id="contact-anchor"></a>
     <div class="contact" id="contact">
         <figure>
-          <img id="linkedin" src="images/linkedin.jpg" alt="decoration" />
+          <img id="linkedin" src="images/linkedin.jpg" alt="linkedin" />
           <figcaption><a href="https://www.linkedin.com/in/ariel-r-huang/">in/ariel-r-huang</a></figcaption>
         </figure>
         <figure>
-          <img id="email" src="images/email.jpg" alt="decoration" />
+          <img id="email" src="images/email.jpg" alt="email" />
           <figcaption><a href="mailto:huangrr@umich.edu">huangrr@umich.edu</a></figcaption>
         </figure>
     </div>
-    <form class="form-horizontal" method="post">
-      <legend class="text-center header">Let's chat!</legend>
-      <div>
-          <input id="fname" name="name" type="text" placeholder="Name" class="form-control">
+
+
+    <h2 class="text-center header">Let's chat!</h2>
+    <div class="form" id="form">
+    <form class="form-horizontal" method="post" action="https://formspree.io/mayyeped">
+      <div class="entry">
+        <label>Name:
+        <input id="name" name="name" type="text" placeholder="Name" class="form-control"></label>
+      </div>
+      <div class="entry">
+        <label>Email:
+        <input id="email-input" name="email" type="text" placeholder="Email" class="form-control"></label>
+      </div>
+      <div class="entry">
+        <label>Message:
+        <textarea class="form-control" id="message" name="message" placeholder="Enter your massage here, and we will be in touch soon!"></textarea></label>
       </div>
       <div>
-          <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-      </div>
-      <div>
-          <textarea class="form-control" id="message" name="message" placeholder="Enter your massage here, and we will be in touch soon!"></textarea>
-      </div>
-      <div>
-          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          <button type="submit">Submit</button>
       </div>
     </form>
+    </div>
+
+  </main>
 
     <footer>
-      <p>Designed and Developed by Ariel Huang &copy; 2019</p></br>
-      <p id="note">This website is still in development. Please check back often for new updates!</p>
-      <a href="https://www.linkedin.com/in/ariel-r-huang/"><img id="footer-img" src="images/linkedin-footer.jpg" alt="decoration" /></a>
+      <p>Designed and Developed by Ariel Huang &copy; 2019</p>
+      <a href="https://www.linkedin.com/in/ariel-r-huang/"><img id="footer-img1" src="images/linkedin-footer.jpg" alt="linkedin-footer" /></a>
       <!--<img id="footer-overlay" src="images/linkedin.jpg" alt="decoration" />-->
-      <a href="mailto:huangrr@umich.edu"><img id="footer-img" src="images/email-footer.jpg" alt="decoration" /></a>
+      <a href="mailto:huangrr@umich.edu"><img id="footer-img2" src="images/email-footer.jpg" alt="email-footer" /></a>
       <!--<img id="footer-overlay" src="images/email.jpg" alt="decoration" />-->
     </footer>
 
